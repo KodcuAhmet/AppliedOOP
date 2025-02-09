@@ -21,7 +21,7 @@
         return schoolDate;
     }
 
-    public bool IsLeap(int year)
+    public virtual bool IsLeap(int year)
     {
         return ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0);
     }
@@ -55,7 +55,7 @@ class JulianSchoolCalendar : SchoolCalendar
     {
     }
 
-    public bool IsLeap(int year)
+    public override bool IsLeap(int year)
     {
         return year % 4 == 0;
     }
